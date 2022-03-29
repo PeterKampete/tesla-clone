@@ -9,10 +9,13 @@ import {
   CloseWrapper,
 } from "./Header.styles";
 import logo from "../../assets/images/logo.svg";
-import Fade from "react-reveal";
+import { selectCars } from "../../features/car/carSlice";
+import { useSelector } from 'react-redux'
 
 const Header = () => {
   const [burgerStatus, setBurgerStatus] = useState(false);
+  const cars = useSelector();
+  // console.log(cars);
   return (
     <Container>
       <a>
