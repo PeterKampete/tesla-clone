@@ -14,7 +14,7 @@ import { useSelector } from 'react-redux'
 
 const Header = () => {
   const [burgerStatus, setBurgerStatus] = useState(false);
-  const cars = useSelector();
+  // const cars = useSelector();
   // console.log(cars);
   return (
     <Container>
